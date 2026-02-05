@@ -1,0 +1,202 @@
+/* services.css */
+
+.vps-services-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.vps-services-section h2 {
+  text-align: center;
+  color: #2c5aa0;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.vps-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.vps-service-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(44, 90, 160, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.vps-service-card:hover,
+.vps-service-card:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(44, 90, 160, 0.2);
+  outline: none;
+}
+
+.vps-service-icon {
+  margin-bottom: 15px;
+}
+
+.vps-service-card h3 {
+  color: #2c5aa0;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.vps-service-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Formulario de reserva */
+.vps-service-form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 14px 40px rgba(44, 90, 160, 0.15);
+  max-width: 500px;
+  margin: 0 auto 50px;
+}
+
+.vps-service-form-container h3 {
+  color: #2c5aa0;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.vps-service-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.vps-service-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+.vps-service-form button {
+  background-color: #2c5aa0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.vps-service-form button:hover {
+  background-color: #244a7a;
+}
+
+.vps-cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.vps-cancel-btn:hover {
+  background-color: #999;
+}
+
+/* Mensaje de agradecimiento */
+.vps-thank-you-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2c5aa0;
+  font-weight: 600;
+}
+
+/* Sección de adopción */
+.vps-adoption-section {
+  margin-top: 60px;
+}
+
+.vps-adoption-section h2 {
+  text-align: center;
+  color: #2c5aa0;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.vps-adoption-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.vps-adoption-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(44, 90, 160, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.vps-adoption-card:hover,
+.vps-adoption-card:focus {
+  box-shadow: 0 14px 40px rgba(44, 90, 160, 0.2);
+  outline: none;
+}
+
+.vps-adoption-card h3 {
+  color: #2c5aa0;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.vps-adoption-card p {
+  color: #555;
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+.vps-adoption-card button {
+  margin-top: 15px;
+  background-color: #2c5aa0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vps-adoption-card button:disabled,
+.vps-adoption-card button[aria-disabled='true'] {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.vps-adoption-card button:hover:not(:disabled) {
+  background-color: #244a7a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .vps-services-grid,
+  .vps-adoption-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vps-service-form-container {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+}

@@ -1,0 +1,121 @@
+.vps-products-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.vps-products-section h2 {
+  color: #2c5aa0;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vps-products-section input[type="text"] {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.vps-product-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.vps-product-filters button {
+  padding: 8px 18px;
+  border: 1px solid #2c5aa0;
+  background-color: white;
+  color: #2c5aa0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.vps-product-filters button.vps-active,
+.vps-product-filters button:hover {
+  background-color: #2c5aa0;
+  color: white;
+}
+
+.vps-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.vps-product-card {
+  background-color: #f0f2f5;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(44, 90, 160, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.vps-product-card:hover,
+.vps-product-card:focus {
+  box-shadow: 0 14px 40px rgba(44, 90, 160, 0.2);
+  outline: none;
+}
+
+.vps-product-image {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.vps-product-card h3 {
+  color: #244a7a;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.vps-product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  min-height: 40px;
+}
+
+.vps-product-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2c5aa0;
+  margin-bottom: 20px;
+}
+
+.vps-add-to-cart {
+  background-color: #2c5aa0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.vps-add-to-cart:hover:not(:disabled) {
+  background-color: #244a7a;
+}
+
+.vps-add-to-cart:disabled,
+.vps-add-to-cart[aria-disabled="true"] {
+  background-color: #999;
+  cursor: not-allowed;
+}

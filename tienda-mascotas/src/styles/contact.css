@@ -1,0 +1,65 @@
+.vps-contact-content {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(44, 90, 160, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.vps-contact-content h2 {
+  color: #2c5aa0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.vps-form-group {
+  margin-bottom: 20px;
+}
+
+.vps-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.vps-form-group input,
+.vps-form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.vps-form-group textarea {
+  min-height: 100px;
+}
+
+.vps-submit-btn {
+  background-color: #2c5aa0;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.vps-submit-btn:hover {
+  background-color: #244a7a;
+}
+
+.vps-thank-you-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2c5aa0;
+  font-weight: 600;
+}

@@ -1,0 +1,64 @@
+.vps-policy-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+  font-family: Arial, sans-serif;
+}
+
+.vps-policy-content h2 {
+  color: #2c5aa0;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.vps-policies-menu {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Ajuste para mejor espaciado */
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.vps-policy-btn {
+  background: #e9ecef;
+  border: 1.5px solid #2c5aa0; /* Borde un poco más grueso para mejor visibilidad */
+  color: #2c5aa0;
+  padding: 10px 22px; /* Ajuste de padding para mejor tamaño */
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem; /* Tamaño de fuente más legible */
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+  box-shadow: none;
+  user-select: none; /* Evita selección accidental de texto */
+}
+
+.vps-policy-btn:hover {
+  background: #2c5aa0;
+  color: white;
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+}
+
+.vps-policy-btn.vps-active {
+  background: #2c5aa0;
+  color: white;
+  box-shadow: 0 6px 16px rgba(44, 90, 160, 0.5);
+}
+
+.vps-policy-panel {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  color: #343a40;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  min-height: 150px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
